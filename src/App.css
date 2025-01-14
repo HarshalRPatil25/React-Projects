@@ -1,0 +1,117 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(212, 255, 138);
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: rgb(34, 139, 34);
+}
+
+/* Form Styles */
+.formSubmit {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.inputField {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.inputField:focus {
+  border-color: rgb(34, 139, 34);
+}
+
+.submitButton,
+.completeButton {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  color: white;
+  background-color: rgb(34, 139, 34);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.submitButton:hover,
+.completeButton:hover {
+  background-color: rgb(28, 117, 28);
+  transform: scale(1.05);
+}
+
+.submitButton:active,
+.completeButton:active {
+  transform: scale(1);
+}
+
+/* Submitted Section Styles */
+.submittedSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.submittedText {
+  font-size: 1rem;
+  color: #666;
+}
+
+.taskText {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(34, 139, 34);
+}
+
+/* Celebration Styles */
+.celebration {
+  font-size: 1.5rem;
+  color: rgb(255, 140, 0);
+  animation: fadeInOut 2s ease-in-out;
+}
+
+/* Fade in/out animation */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
